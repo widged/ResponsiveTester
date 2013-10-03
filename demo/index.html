@@ -38,14 +38,14 @@ $(function(){
 
         <p><a href="#">Suspendisse convallis</a> nunc eu dolor luctus ultricies. In hac habitasse platea dictumst. Vivamus sed lobortis velit. Fusce ullamcorper, lectus sit amet semper luctus, neque tellus fermentum purus, vitae condimentum nisi dui non dolor. Curabitur tincidunt, nisi vel faucibus luctus, mauris turpis tristique mauris, vitae fermentum dui est nec tellus. Ut ultrices non turpis non facilisis. Fusce tincidunt ut sapien at pharetra. Donec tortor lectus, luctus id neque a, aliquam euismod neque. Phasellus interdum eleifend vulputate. Aenean sit amet ligula at diam faucibus tincidunt. Morbi ut ligula ac leo tempor luctus. Sed id lorem non ante egestas interdum tincidunt non elit. Nullam facilisis lacus vel libero molestie adipiscing. Fusce molestie venenatis diam.</p>
         </div>
-      */}.toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
+      */}.toString().match(/[\s\S]*\/\*([\s\S]*)\*\//)[1];
 
     var contentToTest2 = function() {/*
         <h3>Some other responsive content to test</h3>
 
         <p><a href="#">Sed blandit</a> iaculis libero quis accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce malesuada eget nisl ac facilisis. Morbi malesuada, sem vitae pellentesque tristique, ipsum libero laoreet ante, eget interdum ipsum leo sit amet nisi. Nunc eget dictum quam, vel tincidunt nulla. Donec ac volutpat augue. Duis aliquet dui non nibh consequat, sit amet lacinia tortor egestas. Donec et sollicitudin tellus. Suspendisse ac augue ullamcorper, tempor justo eget, dapibus arcu. Suspendisse luctus urna id mi ultrices pretium nec at turpis. Suspendisse porttitor lorem eu neque venenatis sodales. Nunc nec quam elementum, molestie ligula eget, aliquam velit. Donec a varius neque. In lacinia luctus massa ac gravida.</p>
         </div>
-      */}.toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
+      */}.toString().match(/[\s\S]*\/\*([\s\S]*)\*\//)[1];
 
     var tester1 = ResponsiveTester.instance().target($('#myTester').first()).width(40).html(contentToTest).stylesheets(stylesheets).render()
     var tester2 = ResponsiveTester.instance().target($('#myTester2').first()).width(80).html(contentToTest2).stylesheets(stylesheets).render()

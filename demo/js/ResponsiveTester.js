@@ -56,8 +56,7 @@ var widged = {};
 
       <div class="responsive-control"></div>
     </div>
-    */}.toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
-
+    */}.toString().match(/[\s\S]*\/\*([\s\S]*)\*\//)[1];
 
     Class.instance = function() {
       var instance = {}, s = {};
