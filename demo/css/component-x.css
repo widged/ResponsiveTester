@@ -1,0 +1,12 @@
+/* line 57, ../sass/app.scss */
+.component-x a {
+  color: #c0392b;
+  text-decoration: none; 
+}
+
+.component-x {
+  font-family: Arial;
+  font-size: 10pt;
+  line-height: 1.5;
+}
+

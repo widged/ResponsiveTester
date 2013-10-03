@@ -7,32 +7,12 @@
 
   <!-- CSS Links -->
   <link rel="stylesheet" href="css/app.css">
+  <link rel="stylesheet" href="css/responsiveTester.css">
   
   <!-- JS Links -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
   <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-  <style>
-  
-  .control-hint {
-    margin: 0 auto; 
-  }
 
-  .control-hint p {
-      background: #2c3e50;
-      color: white;
-      margin: 0 auto;
-      padding: 15px 0;
-      margin: 0 auto 2%;
-      position: relative;
-      text-align: center;
-      width: 45%;
-      z-index: 5;
-      -webkit-border-radius: 50px;
-      -moz-border-radius: 50px;
-      -ms-border-radius: 50px;
-      -o-border-radius: 50px;
-      border-radius: 50px; }
-    </style>  
 </head>
 
 <body>
@@ -42,7 +22,7 @@
   <p>Drag the slider to watch the width change.</p>
 </div>
 <div id="myTester"></div>
-<div id="myTester2" class='smurf'></div>
+<div id="myTester2" class='component-x'></div>
 
 <script src="js/ResponsiveTester.js"></script>
 
@@ -51,7 +31,7 @@
 $(function(){
 
   var ResponsiveTester = widged.ResponsiveTester;
-    var stylesheets = ['css/a-component.css'];
+    var stylesheets = ['css/component-x.css'];
     var contentToTest = function() {/*
         <h3>Responsive Content</h3>
         <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Mauris eget justo pretium, blandit purus id, faucibus libero. Sed pellentesque est nisi, sit amet adipiscing risus sollicitudin ut. Nullam laoreet tellus id mi bibendum gravida. Aliquam nec odio sed ante sollicitudin congue. Curabitur placerat, ligula sed ultrices pulvinar, dui eros convallis est, eu fermentum justo nisi vitae nibh. Vestibulum vitae pretium nunc. Donec aliquet justo velit, at molestie est porttitor sed.</p>

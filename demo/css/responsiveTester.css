@@ -1,0 +1,85 @@
+
+
+/* line 454, ../sass/app.scss */
+.view.responsive {
+  padding: 0 10% 4%; }
+
+
+
+  /* line 484, ../sass/app.scss */
+  .view.responsive .responsive-control {
+    background: #2c3e50;
+    cursor: ew-resize;
+    height: 15px;
+    margin: 4% 0 0;
+    position: relative;
+    text-align: left;
+    width: 100%;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    border-radius: 8px; }
+    /* line 493, ../sass/app.scss */
+    .view.responsive .responsive-control .ui-slider-handle {
+      background: #19bc9c;
+      cursor: ew-resize;
+      height: 31px;
+      top: -8px;
+      margin-left: -15px;
+      outline: none;
+      position: absolute;
+      width: 31px;
+      z-index: 2;
+      -webkit-border-radius: 50%;
+      -moz-border-radius: 50%;
+      -ms-border-radius: 50%;
+      -o-border-radius: 50%;
+      border-radius: 50%; }
+  /* line 506, ../sass/app.scss */
+  .view.responsive .responsive-wrap {
+    background: white;
+    height: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    width: 60%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px; }
+    /* line 523, ../sass/app.scss */
+    .view.responsive .responsive-wrap .responsive-injectable {
+      height: 327px;
+      margin-top: 73px;
+      overflow: auto;
+      padding: 15px 7% 30px; }
+    /* line 531, ../sass/app.scss */
+    .view.responsive .responsive-wrap .browser-nav,
+    .view.responsive .responsive-wrap .browser-tools,
+    .view.responsive .responsive-wrap .browser-top {
+      position: absolute; }
+    /* line 535, ../sass/app.scss */
+    .view.responsive .responsive-wrap .browser-nav,
+    .view.responsive .responsive-wrap .browser-tools {
+      z-index: 99; }
+    /* line 538, ../sass/app.scss */
+    .view.responsive .responsive-wrap .browser-nav {
+      height: 72px;
+      left: 0;
+      top: 0;
+      width: 180px; }
+    /* line 544, ../sass/app.scss */
+    .view.responsive .responsive-wrap .browser-tools {
+      height: 72px;
+      right: 0;
+      top: 0;
+      width: 37px; }
+    /* line 550, ../sass/app.scss */
+    .view.responsive .responsive-wrap .browser-top {
+      height: 72px;
+      top: 0;
+      width: 100%;
+      z-index: 90; 
+}
