@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Responsive Test</title>
+
+  <!-- CSS Links -->
+  <link rel="stylesheet" href="css/app.css">
+  
+  <!-- JS Links -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+  <style>
+  
+  .control-hint {
+    margin: 0 auto; 
+  }
+
+  .control-hint p {
+      background: #2c3e50;
+      color: white;
+      margin: 0 auto;
+      padding: 15px 0;
+      margin: 0 auto 2%;
+      position: relative;
+      text-align: center;
+      width: 45%;
+      z-index: 5;
+      -webkit-border-radius: 50px;
+      -moz-border-radius: 50px;
+      -ms-border-radius: 50px;
+      -o-border-radius: 50px;
+      border-radius: 50px; }
+    </style>  
+</head>
+
+<body>
+
+<div class="control-hint">
+  <div class="hint-triangle"></div>
+  <p>Drag the slider to watch the width change.</p>
+</div>
+<div id="myTester"></div>
+<div id="myTester2" class='smurf'></div>
+
+<script src="js/ResponsiveTester.js"></script>
+
+<script>
+
+$(function(){
+
+  var ResponsiveTester = widged.ResponsiveTester;
+    var stylesheets = ['css/a-component.css'];
+    var contentToTest = function() {/*
+        <h3>Responsive Content</h3>
+        <p><a href="#">Lorem ipsum</a> dolor sit amet, consectetur adipiscing elit. Mauris eget justo pretium, blandit purus id, faucibus libero. Sed pellentesque est nisi, sit amet adipiscing risus sollicitudin ut. Nullam laoreet tellus id mi bibendum gravida. Aliquam nec odio sed ante sollicitudin congue. Curabitur placerat, ligula sed ultrices pulvinar, dui eros convallis est, eu fermentum justo nisi vitae nibh. Vestibulum vitae pretium nunc. Donec aliquet justo velit, at molestie est porttitor sed.</p>
+
+        <p><a href="#">Suspendisse convallis</a> nunc eu dolor luctus ultricies. In hac habitasse platea dictumst. Vivamus sed lobortis velit. Fusce ullamcorper, lectus sit amet semper luctus, neque tellus fermentum purus, vitae condimentum nisi dui non dolor. Curabitur tincidunt, nisi vel faucibus luctus, mauris turpis tristique mauris, vitae fermentum dui est nec tellus. Ut ultrices non turpis non facilisis. Fusce tincidunt ut sapien at pharetra. Donec tortor lectus, luctus id neque a, aliquam euismod neque. Phasellus interdum eleifend vulputate. Aenean sit amet ligula at diam faucibus tincidunt. Morbi ut ligula ac leo tempor luctus. Sed id lorem non ante egestas interdum tincidunt non elit. Nullam facilisis lacus vel libero molestie adipiscing. Fusce molestie venenatis diam.</p>
+        </div>
+      */}.toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
+
+    var contentToTest2 = function() {/*
+        <h3>Some other responsive content to test</h3>
+
+        <p><a href="#">Sed blandit</a> iaculis libero quis accumsan. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Fusce malesuada eget nisl ac facilisis. Morbi malesuada, sem vitae pellentesque tristique, ipsum libero laoreet ante, eget interdum ipsum leo sit amet nisi. Nunc eget dictum quam, vel tincidunt nulla. Donec ac volutpat augue. Duis aliquet dui non nibh consequat, sit amet lacinia tortor egestas. Donec et sollicitudin tellus. Suspendisse ac augue ullamcorper, tempor justo eget, dapibus arcu. Suspendisse luctus urna id mi ultrices pretium nec at turpis. Suspendisse porttitor lorem eu neque venenatis sodales. Nunc nec quam elementum, molestie ligula eget, aliquam velit. Donec a varius neque. In lacinia luctus massa ac gravida.</p>
+        </div>
+      */}.toString().match(/[^]*\/\*([^]*)\*\/\}$/)[1];
+
+    var tester1 = ResponsiveTester.instance().target($('#myTester').first()).width(40).html(contentToTest).stylesheets(stylesheets).render()
+    var tester2 = ResponsiveTester.instance().target($('#myTester2').first()).width(80).html(contentToTest2).stylesheets(stylesheets).render()
+
+});
+</script>
+
+
+</body>
+
+</html>  
